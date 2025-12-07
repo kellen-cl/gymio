@@ -91,10 +91,3 @@ if (hamburger) {
     });
 }
 
-hamburger.addEventListener('click', () => {
-    console.log('Menu clicked!');
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    document.body.classList.toggle('menu-open');
-    console.log('Menu classes:', navLinks.className);
-});
