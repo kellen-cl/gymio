@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMIO - Frequently Asked Questions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/faqs.css">
+        
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="container">
+    <div class="logo">GYMIO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html" class="active">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="faqs-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to common questions about our programs, services, and membership.</p>
+</section>
+
+<!-- SEARCH BAR -->
+<div class="faq-search">
+    <i class="fas fa-search"></i>
+    <input type="text" id="faqSearchInput" placeholder="Search for answers...">
+</div>
+
+<!-- FAQ CATEGORIES -->
+<div class="faq-categories container">
+    <span class="category-tag active" data-category="all">All Questions</span>
+    <span class="category-tag" data-category="programs">Programs</span>
+    <span class="category-tag" data-category="membership">Membership</span>
+    <span class="category-tag" data-category="classes">Classes</span>
+</div>
+
+<!-- FAQ ACCORDION -->
+<section class="faq-section" id="faqContainer">
+    <div class="faq-item" data-category="programs">
+        <button class="faq-question">
+            What types of fitness programs do you offer?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>We offer comprehensive Personal Training sessions, high-energy Group Classes, and professional Nutrition Coaching. All programs are customized to match your fitness level, goals, and lifestyle, ensuring you get the best results possible.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="classes">
+        <button class="faq-question">
+            Do I need prior experience to join classes?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Absolutely not! Our classes are designed for all fitness levels, from complete beginners to advanced athletes. Our experienced trainers will guide you through each exercise, ensuring proper form and safety while helping you progress at your own pace.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="membership">
+        <button class="faq-question">
+            Can I switch between plans later?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes! You have complete flexibility to upgrade, downgrade, or change your plan at any time. Simply contact us or visit our facility, and we'll help you transition to the plan that best suits your evolving needs and goals.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="classes">
+        <button class="faq-question">
+            Do you offer virtual training sessions?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes! We provide live virtual training sessions for all our programs via Zoom and other platforms. You'll get the same personalized attention and professional coaching from the comfort of your home, with flexible scheduling options.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="membership">
+        <button class="faq-question">
+            What is your cancellation policy?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>We require 24 hours notice for session cancellations. You can cancel or reschedule your sessions through our online portal or by contacting us directly. We understand that life happens, and we're here to work with your schedule.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="programs">
+        <button class="faq-question">
+            How long are the training sessions?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Personal training sessions are typically 60 minutes long, while group classes range from 45 to 60 minutes. Each session is carefully structured to maximize your workout efficiency and results while allowing time for warm-up, cool-down, and proper stretching.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="membership">
+        <button class="faq-question">
+            Do you offer trial sessions?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes! We offer a complimentary first session so you can experience our training approach and meet our team. This allows you to see if Gymio is the right fit for you before committing to a full membership.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" data-category="programs">
+        <button class="faq-question">
+            What equipment do I need for virtual sessions?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>For virtual sessions, you'll need minimal equipment - typically just a yoga mat, some dumbbells or resistance bands, and enough space to move freely. We can also design bodyweight-only workouts if you have no equipment available.</p>
+        </div>
+    </div>
+</section>
+
+<div class="no-results" id="noResults">
+    <i class="fas fa-search"></i>
+    <p>No FAQs match your search. Try different keywords.</p>
+</div>
+
+<!-- CTA SECTION -->
+<div class="faq-cta container">
+    <h2>Still Have Questions?</h2>
+    <p>Can't find what you're looking for? Our team is here to help!</p>
+    <a href="contact.html" class="cta-btn">Contact Us</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Gymio Fitness | All rights reserved.</p>
+</footer>
+
+<script src="assets/js/faqs.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMIO - Book Your Session</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/book.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="container">
+    <div class="logo">GYMIO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="book.html" class="active">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="booking-hero">
+    <h1>Book Your Fitness Session</h1>
+    <p>Schedule your workout at a time that suits you. Start your transformation journey today.</p>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking-form-section">
+    <div class="form-container">
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select Your Plan</label>
+                <div class="plan-cards">
+                    <div class="plan-card" data-plan="Starter Plan">
+                        <h4>Starter</h4>
+                        <p>Perfect for beginners</p>
+                    </div>
+                    <div class="plan-card" data-plan="Pro Plan">
+                        <h4>Pro</h4>
+                        <p>For serious athletes</p>
+                    </div>
+                    <div class="plan-card" data-plan="Elite Plan">
+                        <h4>Elite</h4>
+                        <p>Premium coaching</p>
+                    </div>
+                </div>
+                <input type="hidden" id="plan" name="plan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Choose Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Choose Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Book Session Now</button>
+        </form>
+    </div>
+</section>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- SUCCESS POPUP -->
+<div class="success-popup" id="successPopup">
+    <i class="fas fa-check-circle"></i>
+    <h2>Booking Confirmed!</h2>
+    <p>Your fitness session has been successfully scheduled.</p>
+    <div class="details" id="bookingDetails"></div>
+    <button class="close-popup-btn" id="closePopup">Got it!</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Gymio Fitness | All rights reserved.</p>
+</footer>
+
+<script src="assets/js/book.js"></script>
+
+</body>
+</html>

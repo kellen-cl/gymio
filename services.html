@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMIO - Our Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/services.css">
+        
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="container">
+    <h2>GYMIO</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="service-hero container">
+    <h1>Our <span>Services</span></h1>
+    <p>Choose a program that fits your journey—whether you want to gain strength, lose weight, build endurance, or transform your overall lifestyle.</p>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="service-section container">
+    <div class="service-card">
+        <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Personal Training">
+        </div>
+        <div class="service-card-content">
+            <div class="service-icon">
+                <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>Personal Training</h3>
+            <p>One-on-one sessions tailored to your fitness level, goals, and time. Get personalized coaching, form correction, and a custom workout plan designed specifically for you.</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" alt="Group Classes">
+        </div>
+        <div class="service-card-content">
+            <div class="service-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3>Group Classes</h3>
+            <p>Fun, high-energy classes including HIIT, Zumba, Cardio, Yoga, and more. Join a community of motivated individuals and achieve your goals together.</p>
+            <a href="book.html" class="btn">Join a Class</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Nutrition Coaching">
+        </div>
+        <div class="service-card-content">
+            <div class="service-icon">
+                <i class="fas fa-apple-alt"></i>
+            </div>
+            <h3>Nutrition Coaching</h3>
+            <p>Transform your eating habits with personalized meal plans, calorie analysis, and sustainable nutrition strategies that work with your lifestyle.</p>
+            <a href="book.html" class="btn">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<!-- WEEKLY CLASS SCHEDULE -->
+<section class="schedule container">
+    <h2>Weekly Class Schedule</h2>
+
+    <div class="day-buttons">
+        <button onclick="showSchedule('monday')" class="active">Monday</button>
+        <button onclick="showSchedule('tuesday')">Tuesday</button>
+        <button onclick="showSchedule('wednesday')">Wednesday</button>
+        <button onclick="showSchedule('thursday')">Thursday</button>
+        <button onclick="showSchedule('friday')">Friday</button>
+        <button onclick="showSchedule('saturday')">Saturday</button>
+    </div>
+
+    <div id="schedule-display" class="schedule-display">
+        <!-- Schedule content will be injected here -->
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta container">
+    <h2>Ready to Transform Your Life?</h2>
+    <p>Book your first session and begin your fitness journey today.</p>
+    <a href="book.html" class="btn">Get Started</a>
+</section>
+
+<script src="assets/js/services.js"></script>
+
+</body>
+</html>

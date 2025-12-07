@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMIO - Blog & Fitness Tips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/blog.css">
+       
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="container">
+    <div class="logo">GYMIO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="blog-hero">
+    <h1>GYMIO Blog</h1>
+    <p>Tips, guides, and insights to help you reach your fitness goals and live your best life.</p>
+</section>
+
+<!-- CATEGORY FILTER + SEARCH -->
+<section class="blog-controls">
+    <div class="categories">
+        <button class="category-btn active" data-category="all">All Posts</button>
+        <button class="category-btn" data-category="fitness">Fitness</button>
+        <button class="category-btn" data-category="nutrition">Nutrition</button>
+        <button class="category-btn" data-category="mindset">Mindset</button>
+        <button class="category-btn" data-category="beginner">Beginner Tips</button>
+    </div>
+    <div class="search-wrapper">
+        <i class="fas fa-search"></i>
+        <input type="text" id="blogSearch" placeholder="Search articles...">
+    </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="blog-grid" id="blogGrid">
+    <div class="blog-post" data-category="fitness">
+        <div class="blog-post-img">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Home Workouts">
+        </div>
+        <div class="blog-post-content">
+            <span class="blog-category-tag">Fitness</span>
+            <h3>5 Effective Home Workouts</h3>
+            <p>Learn how to stay fit without leaving your home with these 5 simple yet powerful exercises that deliver results.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="blog-post" data-category="nutrition">
+        <div class="blog-post-img">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Healthy Snacks">
+        </div>
+        <div class="blog-post-content">
+            <span class="blog-category-tag">Nutrition</span>
+            <h3>Top 10 Healthy Snacks</h3>
+            <p>Boost your energy and maintain your diet with these nutritious snack ideas that taste amazing and fuel your body.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="blog-post" data-category="mindset">
+        <div class="blog-post-img">
+            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b" alt="Mindset">
+        </div>
+        <div class="blog-post-content">
+            <span class="blog-category-tag">Mindset</span>
+            <h3>Building a Winning Mindset</h3>
+            <p>How mental strength and consistency can transform your fitness journey and help you achieve lasting results.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="blog-post" data-category="beginner">
+        <div class="blog-post-img">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Gym Beginner">
+        </div>
+        <div class="blog-post-content">
+            <span class="blog-category-tag">Beginner Tips</span>
+            <h3>Getting Started at the Gym</h3>
+            <p>A complete beginner's guide to making the most out of your gym sessions and building confidence in your fitness journey.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="blog-post" data-category="fitness">
+        <div class="blog-post-img">
+            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f" alt="Strength Training">
+        </div>
+        <div class="blog-post-content">
+            <span class="blog-category-tag">Fitness</span>
+            <h3>Strength Training 101</h3>
+            <p>Master the fundamentals of strength training with proper form, technique, and progressive overload principles.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="blog-post" data-category="nutrition">
+        <div class="blog-post-img">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Meal Prep">
+        </div>
+        <div class="blog-post-content">
+            <span class="blog-category-tag">Nutrition</span>
+            <h3>Meal Prep Made Simple</h3>
+            <p>Save time and stay on track with your nutrition goals using these practical meal preparation strategies and recipes.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+<div class="no-results" id="noResults">
+    <i class="fas fa-search"></i>
+    <p>No posts found matching your search.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Gymio Fitness | All rights reserved.</p>
+</footer>
+
+<script src="assets/js/blog.js"></script>
+
+</body>
+</html>

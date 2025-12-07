@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMIO - Pricing Plans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/pricing.css">
+        
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="container">
+    <div class="logo">GYMIO</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="pricing-hero">
+    <h1>Choose Your Fitness Plan</h1>
+    <p>Select a membership package that fits your goals and lifestyle.</p>
+</section>
+
+<!-- PRICING TOGGLE -->
+<div class="pricing-toggle">
+    <span class="active" id="monthlyLabel">Monthly</span>
+    <div class="toggle-switch" id="billingToggle" onclick="toggleBilling()">
+        <div class="toggle-slider"></div>
+    </div>
+    <span id="yearlyLabel">Yearly <small>(Save 20%)</small></span>
+</div>
+
+<!-- PRICING CARDS -->
+<section class="pricing-section container">
+    <div class="price-card">
+        <h3>Starter Plan</h3>
+        <p class="price" id="starterPrice">$19<span>/mo</span></p>
+        <ul>
+            <li><i class="fas fa-check check"></i> Access to basic workouts</li>
+            <li><i class="fas fa-check check"></i> Weekly progress tracker</li>
+            <li><i class="fas fa-check check"></i> Beginner diet templates</li>
+            <li><i class="fas fa-times times"></i> No trainer sessions</li>
+        </ul>
+        <a href="book.html" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="price-card featured">
+        <div class="featured-badge">POPULAR</div>
+        <h3>Pro Plan</h3>
+        <p class="price" id="proPrice">$39<span>/mo</span></p>
+        <ul>
+            <li><i class="fas fa-check check"></i> All Starter benefits</li>
+            <li><i class="fas fa-check check"></i> 4 trainer sessions monthly</li>
+            <li><i class="fas fa-check check"></i> Personalized meal plan</li>
+            <li><i class="fas fa-check check"></i> Access to group classes</li>
+        </ul>
+        <a href="book.html" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="price-card">
+        <h3>Elite Plan</h3>
+        <p class="price" id="elitePrice">$79<span>/mo</span></p>
+        <ul>
+            <li><i class="fas fa-check check"></i> Unlimited trainer sessions</li>
+            <li><i class="fas fa-check check"></i> Custom workout plan</li>
+            <li><i class="fas fa-check check"></i> Full nutrition coaching</li>
+            <li><i class="fas fa-check check"></i> VIP priority support</li>
+        </ul>
+        <a href="book.html" class="btn">Choose Plan</a>
+    </div>
+</section>
+
+<!-- CUSTOM PLAN -->
+<section class="custom-plan container">
+    <h2>Need a Custom Plan?</h2>
+    <p>We can build specialized fitness or nutrition programs for teams, companies, or unique goals. Let's create something perfect for you.</p>
+    <a href="contact.html" class="btn custom-btn">Contact Us</a>
+</section>
+
+<!-- BMI CALCULATOR -->
+<section class="calculator-section">
+    <h2>BMI Calculator</h2>
+    <p>Check your Body Mass Index and understand your current fitness level.</p>
+
+    <div class="calculator-box">
+        <input type="number" id="weight" placeholder="Enter your weight (kg)" min="1">
+        <input type="number" id="height" placeholder="Enter your height (cm)" min="1">
+        <button onclick="calcBMI()">Calculate BMI</button>
+        <div id="bmiResult"></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Gymio Fitness | All rights reserved.</p>
+</footer>
+
+<script src="assets/js/pricing.js" ></script>
+
+</body>
+</html>
