@@ -150,7 +150,7 @@
     .nav-links {
         position: fixed !important;
         top: 0 !important;
-        right: 0 !important;
+        right: -100% !important;
         height: 100vh !important;
         width: 75% !important;
         max-width: 320px !important;
